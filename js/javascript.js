@@ -30,6 +30,7 @@ function validarInformacion() {
 
     let emailInput = document.getElementById('email');
     let email = emailInput.value;
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     let cedulaInput = document.getElementById('identification');
     let cedula = cedulaInput.value;
@@ -56,6 +57,10 @@ function validarInformacion() {
     }
     else if (!email){
         alert("Por favor digite un correo");
+        emailInput.focus();
+    }
+    else if (!regex.test(email)) {
+        alert("Por favor, ingresa un email válido.");
         emailInput.focus();
     }
     else if (!cedula){
