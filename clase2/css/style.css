@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#formulario {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: #3863ba;
+  font-family: Arial, sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-bottom: 2px solid #333;
+  width: 100%;
+}
+
+.inputs {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.inputs:focus {
+  border-color: #3863ba;
+  box-shadow: 0 0 5px rgba(56, 99, 186, 0.5);
+}
+
+button {
+  background-color: #3863ba;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #333;
+}
